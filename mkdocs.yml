@@ -1,7 +1,9 @@
-site_name: qool
+site_name: Welcome!
 
 theme:
   name: material
+  favicon: img/favicon.ico
+  logo: img/favicon.ico
   features:
     - navigation.tabs
     - navigation.sections
@@ -30,11 +32,11 @@ palette:
 extra:
   social:
     - icon: fontawesome/brands/github-alt
-      #link: https://github.com/james-willett
+      link: https://github.com/Gabriellanaro/qool
     - icon: fontawesome/brands/twitter
-      #link: https://twitter.com/TheJamesWillett
+      #link: 
     - icon: fontawesome/brands/linkedin
-      #link: https://www.linkedin.com/in/willettjames/
+      link: https://www.linkedin.com/company/qool-company/
 
 
 markdown_extensions:
@@ -50,3 +52,9 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.mark
   - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      
+copyright: |
+  &copy; 2023 <a href="https://www.qool-company.com/"  target="_blank" rel="noopener">qool Company</a>
