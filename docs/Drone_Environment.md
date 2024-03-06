@@ -20,7 +20,7 @@
         The episode is considered done when the drone reaches the target or exceeds the maximum number of allowed
         actions.
 
-## def __init__(self)
+## init(self):
         Initializes the DroneEnv class.
 
         The method sets up the observation space and action space for the drone environment.
@@ -31,7 +31,7 @@
         Returns:
         None
 
-## def reset(self, theta=None)
+## reset(self, theta=None):
         Reset the environment to its initial state.
 
         Args:
