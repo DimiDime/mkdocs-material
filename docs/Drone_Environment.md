@@ -53,7 +53,7 @@
             tuple: A tuple containing the next state, the reward, a flag indicating if the episode is done, and
             additional information.
 
-# Heloer functions:
+# Helper functions:
 
 ## plot_cylinder(ax, x, y, z, radius, height, num_points=25, alpha=0.8, color="blue"):
     Plot a cylinder on the given axes.
