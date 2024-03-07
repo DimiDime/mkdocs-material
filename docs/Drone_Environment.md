@@ -2,6 +2,7 @@
   Drones_Env(gym.Env)
   Gym environment for controlling drones.
     The goal of this environment is to control a drone to reach a target position while avoiding obstacles.
+
     Observation:
         - weight_pos_obj (array): Weighted position difference between the drone and the target.
         - weight_pos_start (array): Weighted position difference between the drone and the initial position.

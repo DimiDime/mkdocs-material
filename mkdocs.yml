@@ -1,33 +1,42 @@
-site_name: Welcome!
+site_name: Welcome to the code documentation.
 
 theme:
+  #custom_dir: material/overrides
   name: material
   favicon: img/favicon.ico
   logo: img/favicon.ico
   features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
     - navigation.tabs
     - navigation.sections
+    - navigation.path
     - toc.integrate
+    - toc.follow
     - navigation.top
     - search.suggest
     - search.highlight
+    - search.share
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
   language: en
-palette:
-    - scheme: default
-      toggle:
-        icon: material/toggle-switch-off-outline 
-        name: Switch to dark mode
-      primary: teal
-      accent: purple 
-    - scheme: slate 
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode    
-      primary: teal
-      accent: lime
+  palette:
+      # Palette toggle for light mode
+      - scheme: default
+        toggle:
+          icon: material/brightness-6 
+          name: Switch to dark mode
+
+      # Palette toggle for dark mode
+      - scheme: slate
+        toggle:
+          icon: material/brightness-4
+          name: Switch to light mode
+
+
 
 extra:
   social:
@@ -37,7 +46,17 @@ extra:
       #link: 
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/qool-company/
-
+  consent:
+    actions:
+        - accept
+        - manage 
+    cookies:
+        title: Cookie consent
+        description: >- 
+          We use cookies to recognize your repeated visits and preferences, as well
+          as to measure the effectiveness of our documentation and whether users
+          find what they're searching for. With your consent, you're helping us to
+          make our documentation better.
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -55,6 +74,11 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-      
+
+# plugins:
+#   - projects
+#   - optimise
+#   - offline
+
 copyright: |
   &copy; 2023 <a href="https://www.qool-company.com/"  target="_blank" rel="noopener">qool Company</a>
